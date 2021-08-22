@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 300px;
+    background-color:#fff;
+    padding: 30px;
+
+    border: 0;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: grid;
+}
+
+/*--------------------
+        Box 
+----------------------*/
+
+.calculator #box{
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    font-size: 20px;
+    color: #000;
+    background-color: transparent;
+
+    border-bottom: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+/*--------------------
+        Button 
+----------------------*/
+
+.calculator span{    
+    width: 60px;
+    height: 60px;
+    color: #000;
+    font-size: 18px;    
+    font-weight: bold;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+
+.calculator span:active{
+    background: skyblue;
+    color: #000;
+}
+
+.calculator span:hover{
+    color: #fa0;
+}
+
+.calculator span.clear{
+    background-color: tomato;
+    border-radius: 50px;
+}
+
+.calculator span.clear:active{
+    background-color: rgb(252, 116, 93);
+    transform: scale(0.9);
+}
+
+.calculator span.equal{
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculator span.equal{
+    background-color: royalblue;
+    border-radius: 50px;
+}
+
+.calculator span.equal:active{
+    background-color: rgb(90, 123, 223);
+    transform: scale(0.9);
+}
+
